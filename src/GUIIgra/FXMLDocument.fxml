@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="GUIIgra.FXMLDocumentController"
+            prefWidth="700.0" prefHeight="480.0">
+
+    <!-- Glavni kontejner -->
+    <VBox spacing="12.0" fillWidth="true" AnchorPane.topAnchor="10.0" AnchorPane.leftAnchor="10.0"
+          AnchorPane.rightAnchor="10.0" AnchorPane.bottomAnchor="10.0">
+        <!-- Naslov -->
+        <Label text="Aktivne igre" style="-fx-font-size: 20px; -fx-font-weight: bold;" />
+
+        <!-- Tabela aktivnih igara -->
+        <TableView fx:id="gamesTable" prefHeight="360.0">
+            <columns>
+                <TableColumn fx:id="colGameId" text="ID" prefWidth="80.0"/>
+                <TableColumn fx:id="colHost" text="Domaćin" prefWidth="180.0"/>
+                <TableColumn fx:id="colPlayers" text="Gost" prefWidth="120.0"/>
+                <TableColumn fx:id="colStatus" text="Status" prefWidth="120.0"/>
+                <TableColumn fx:id="colCreated" text="Kreirano" prefWidth="160.0"/>
+            </columns>
+        </TableView>
+
+        <!-- Dugmad -->
+        <HBox spacing="10.0" alignment="CENTER_RIGHT">
+            <Button fx:id="btnRefresh" text="Osveži listu igara" onAction="#handleRefreshGames"/>
+            <Button fx:id="btnCreate" text="Kreiraj igru" onAction="#handleCreateGame"/>
+            <Button fx:id="btnJoin" text="Pridruži se igri" onAction="#handleJoinGame"/>
+        </HBox>
+
+        <!-- Status poruke -->
+        <Label fx:id="statusLabel" text="" />
+    </VBox>
+</AnchorPane>

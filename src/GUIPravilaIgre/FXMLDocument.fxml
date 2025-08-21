@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="390.0" prefWidth="497.0" styleClass="pozadina" stylesheets="@../CSS/stylesheet.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUIPravilaIgre.FXMLDocumentController">
+    <children>
+        <Label layoutX="147.0" layoutY="14.0" prefHeight="32.0" prefWidth="197.0" text="                Pravila igre Yamb" textAlignment="JUSTIFY" textFill="#1801c1">
+            <font>
+                <Font name="System Bold" size="13.0" />
+            </font>
+        </Label>
+        <Button fx:id="ok" layoutX="193.0" layoutY="308.0" mnemonicParsing="false" onAction="#izlazIzPrograma" prefHeight="26.0" prefWidth="111.0" styleClass="dugme" stylesheets="@../CSS/stylesheet.css" text="OK" textFill="#1b24d0" />
+        <TextArea editable="false" layoutX="20.0" layoutY="67.0" prefHeight="226.0" prefWidth="462.0" text="Yamb je društvena igra sa kockicama.&#10;&#10;Cilj igre je sakupiti što više poena popunjavanjem tabela različitim kombinacijama.&#10;&#10;Igra se sa 5 kockica. U svakom potezu, igrač baca kockice do 3 puta, zadržavajući željene.&#10;Na osnovu dobijenih kombinacija, rezultat se upisuje u odgovarajuće polje tabele.&#10;&#10;Osnovna pravila igre:&#10;1. U svakom potezu igrač bira jedno slobodno polje da upiše rezultat.&#10;2. Svaka kombinacija se može koristiti samo jednom.&#10;3. Polja uključuju: Jedinice, Dvojke, Trojke... Poker, Full House, Skale, Yamb.&#10;4. Yamb (5 istih kockica) daje najviše poena.&#10;&#10;Na kraju igre sabiraju se svi poeni iz tabela, i igrač sa najviše osvojenih poena pobeđuje." >
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </TextArea>
+    </children>
+</AnchorPane>

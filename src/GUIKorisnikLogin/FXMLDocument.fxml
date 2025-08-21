@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="419.0" prefWidth="321.0" styleClass="pozadina" stylesheets="@../CSS/stylesheet.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUIKorisnikLogin.FXMLDocumentController">
+   <children>
+      <PasswordField fx:id="sifra" layoutX="106.0" layoutY="164.0" prefHeight="25.0" prefWidth="111.0" text="dana" />
+      <Label layoutX="122.0" layoutY="85.0" text="Korisničko ime:">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font></Label>
+      <Label layoutX="148.0" layoutY="148.0" text="Šifra:">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font></Label>
+      <Button fx:id="kreirajKorisnika" layoutX="107.0" layoutY="336.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="111.0" styleClass="dugme" stylesheets="@../CSS/stylesheet.css" text="Registruj se" textFill="#bf0000" />
+      <Button fx:id="prijaviKorisnika" layoutX="107.0" layoutY="226.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="111.0" styleClass="dugme" stylesheets="@../CSS/stylesheet.css" text="Prijavi se" textFill="#9a0808" />
+      <TextField fx:id="korisnickoIme" layoutX="105.0" layoutY="101.0" prefHeight="25.0" prefWidth="111.0" text="dana" />
+      <Label layoutX="89.0" layoutY="27.0" prefHeight="32.0" prefWidth="118.0" text="          Uloguj se:">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="121.0" layoutY="304.0" prefHeight="32.0" prefWidth="80.0" text="Nemas nalog?">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
